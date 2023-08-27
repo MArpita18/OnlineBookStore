@@ -5,43 +5,25 @@
 {% endblock title %}
 
 {% block content %}
+<div class="container">
+    <h1>Welcome to BookStore</h1>
+    <p>At BookStore, we're not just a virtual collection of books; we're a sanctuary for readers, a haven for literary enthusiasts, and a treasure trove of stories waiting to be explored. With a profound love for literature and a dedication to the written word, we've crafted an online bookstore that encapsulates the joy of reading in every click, scroll, and page turned.</p>
 
+    <h2>Our Philosophy</h2>
+    <p>At the heart of BookStore is a belief in the transformative power of books. We understand that every story has the potential to transport you to far-off lands, ignite your imagination, and challenge your perspectives. It's this understanding that drives us to curate a meticulously selected range of books spanning genres, authors, and eras, ensuring that every reading journey is a rewarding one.</p>
 
-    <h1>about us</h1>
-    <h2>{{name}} is {{age}} years old</h2>
-    {% if num1 > num2 %}
-        <h2>{{num1}} is greater</h2>
-    {% else %}
-    <h2>{{num2}} is greater</h2>
-    <h2></h2>
-    {% endif %}
+    <h2>The BookStore Experience</h2>
+    <p>Discovering your next literary adventure is a breeze at BookStore. Our user-friendly website is designed to help you seamlessly navigate through genres, explore new releases, and unearth timeless classics. Whether you're seeking the pulse-pounding thrill of mystery, the heartwarming embrace of romance, the intellectual stimulation of non-fiction, or the whimsical allure of fantasy – we've meticulously organized our virtual shelves to cater to your diverse tastes.</p>
 
-    {% comment %} Declaring variables {% endcomment %}
-    {% with x=5 %}
-        {{x}}
-    {% endwith %}
+    <h2>Beyond Books</h2>
+    <p>BookStore is more than just a place to shop for books; it's a vibrant community that celebrates the art of storytelling. Join us in our virtual reading nooks, where book clubs thrive, author interviews spark inspiration, and lively discussions about literature flourish. Connect with fellow book lovers who share your passion and immerse yourself in conversations that deepen your understanding of the written word.</p>
 
+    <h2>Exceptional Service</h2>
+    <p>Your satisfaction is paramount to us. With secure and hassle-free transactions, prompt deliveries, and a responsive customer support team, we aim to make your shopping experience as enjoyable as the stories you'll uncover within our pages.</p>
 
-    <table border="1">
-        <tr><th>Roll</th><th>Name</th></tr>
-    {% for k,v in students.items %}
-    
-    <tr><td>{{k}} </td> <td> {{v}}</td></tr>
-    {% endfor %}
-    </table>
+    <h2>Thank You</h2>
+    <p>As fellow lovers of literature, we're delighted to have you embark on this literary journey with us. Whether you're here to find a new favorite author, revisit cherished tales, or broaden your horizons through written knowledge, BookStore is here to accompany you every step of the way. Thank you for choosing us as your companion in the world of words.</p>
 
-    <table border="1">
-        <tr> <th>Roll</th> <th>Name</th><th>1st Sem</th><th>2nd Sem</th><th>3rd Sem</th><th>4th Sem</th></tr>
-        {% for roll, result in results.items %}
-        <tr>
-            <td>{{roll}}</td>
-            <td>{{result.name}}</td>
-            {% for c in result.cgpa %}
-            <td>{{c}}</td>
-            {% endfor %}
-        
-        </tr>
-        {% endfor %}
-    </table>
-
-    {% endblock content%}
+    <p>Welcome to BookStore – where every book is an invitation to explore, dream, and get lost in the magic of reading.</p>
+</div>
+{% endblock content%}
